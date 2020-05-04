@@ -1,5 +1,8 @@
 FROM ubuntu
-MAINTAINER Dirane (diranetafen@yahoo.com)
+MAINTAINER Fabrice (fabricegillain54@gmail.com)
+ARG DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Paris
 RUN apt-get update \
     && apt-get install -y nginx git
 RUN rm -Rf /var/www/html/*
