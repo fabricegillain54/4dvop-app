@@ -7,7 +7,7 @@
       docker_container:
         name: nginx
         hostname: nginx
-        image: dirane/4dvop-nginx
+        image: 296389/4dvop-nginx
         state: started
         ports:
           - "8080:8080"
@@ -15,7 +15,7 @@
       docker_container:
         name: haproxy
         hostname: haproxy 
-        image: dirane/4dvop-haproxy
+        image: 296389/4dvop-haproxy
         state: started
         links:  
           - nginx:nginx
